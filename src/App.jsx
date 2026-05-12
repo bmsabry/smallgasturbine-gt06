@@ -6,7 +6,7 @@ import { COURSE_META, SECTIONS, SUMMATIVE, REFERENCE_ENGINE, findConcept } from 
 import Instructor from "./instructor.jsx";
 
 const CONTACT_EMAIL = "info@proreadyengineer.com";
-const MODULE_ID = "gt-05";
+const MODULE_ID = "gt-06";
 
 // ─────────────────────────────────────────────────────────────────────────
 // Top-level state machine
@@ -326,7 +326,7 @@ function AwaitingAccess({ user, access, onRequestAccess, onOpenInstructor }) {
           {!access?.has_pending_request && (
             <button className="btn btn-primary" onClick={onRequestAccess}>Request access</button>
           )}
-          <a className="btn btn-ghost" href={`mailto:${CONTACT_EMAIL}?subject=GT-05%20access%20request%20for%20${encodeURIComponent(user.email)}`}>
+          <a className="btn btn-ghost" href={`mailto:${CONTACT_EMAIL}?subject=GT-06%20access%20request%20for%20${encodeURIComponent(user.email)}`}>
             Email {CONTACT_EMAIL}
           </a>
           {access?.is_admin && (
