@@ -190,7 +190,7 @@ function TopBar({ user, access, onHome, onInstructor, onSignOut }) {
   return (
     <header className="topbar">
       <h1 onClick={onHome} style={{ cursor: "pointer" }}>
-        <span>{COURSE_META.code}</span> — Centrifugal Compressor
+        <span>{COURSE_META.code}</span> — Evaporative Tube Combustor
         <span style={{ color: "var(--txtMuted)", fontWeight: 400, fontSize: 13, marginLeft: 10 }}>
           ProReadyEngineer · Small Jet Engine Design Training
         </span>
@@ -255,7 +255,7 @@ function LoginGate({ onSignedIn, pendingToken }) {
     <div className="login-shell">
       <form className="login-card fade-in" onSubmit={submit}>
         <div className="brand">
-          <span>{COURSE_META.code}</span> — Centrifugal Compressor
+          <span>{COURSE_META.code}</span> — Evaporative Tube Combustor
         </div>
         <div className="tag">
           {pendingToken
