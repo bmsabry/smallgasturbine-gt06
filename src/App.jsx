@@ -510,6 +510,17 @@ function Overview({ progress, onOpenSection, onOpenCalculator, onOpenQuiz, onOpe
         </div>
       </div>
 
+      {completed >= SECTIONS.length && (
+        <div className="card" style={{ borderColor: "var(--good)", background: "rgba(74,222,128,.04)" }}>
+          <h3>Module complete — continue to GT-07</h3>
+          <p className="muted small">You've finished all {SECTIONS.length} sections of GT-06. The next module in the Small Jet Engine Design Training is <b>GT-07 — Axial Turbine</b>, which takes the combustor exit conditions (T04, P04, pattern factor) you've just shaped and turns them into shaft work.</p>
+          <div className="btn-row">
+            <a href="https://smallgasturbine.gt-07.proreadyengineer.com/" target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ textDecoration: "none" }}>
+              Continue to GT-07 →
+            </a>
+          </div>
+        </div>
+      )}
       <div className="card">
         <h3>Tools</h3>
         <p className="muted small">Reach for these any time during the module.</p>
